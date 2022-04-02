@@ -1,4 +1,3 @@
-// const { globals } = require('./.eslintrc-auto-import.json')
 module.exports = {
   root: true,
   env: {

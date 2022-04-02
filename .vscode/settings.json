@@ -18,7 +18,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
-
   
   "workbench.startupEditor": "none",
   "editor.minimap.enabled": false,
@@ -45,7 +44,7 @@
       "wrap_attributes": "force-aligned"
     }
   },
-  
+
   "css.validate": false,
   "window.zoomLevel": 0,
   "explorer.confirmDragAndDrop": false,
