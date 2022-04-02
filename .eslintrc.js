@@ -27,6 +27,7 @@ module.exports = {
         tabWidth: 2,
         tabs: false,
         semi: false,
+        parase: 'typescript',
         singleQuote: true,
         trailingComma: 'none'
       },

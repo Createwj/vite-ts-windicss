@@ -1,6 +1,7 @@
-import { createApp } from 'vue'
 import App from './App.vue'
+import 'vue-global-api'
 import router, { setupRouter } from '@/router/index'
+import { createApp } from 'vue'
 
 import 'virtual:windi.css'
 import 'virtual:windi-devtools'
