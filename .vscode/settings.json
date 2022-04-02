@@ -12,10 +12,14 @@
   "editor.guides.bracketPairs": "active",
   "workbench.editor.showTabs": true,
   "workbench.editor.enablePreview": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 指定 *.js 文件的格式化工具为eslint
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
+
+  
   "workbench.startupEditor": "none",
   "editor.minimap.enabled": false,
   "workbench.colorTheme": "Dracula Soft",
@@ -41,6 +45,7 @@
       "wrap_attributes": "force-aligned"
     }
   },
+  
   "css.validate": false,
   "window.zoomLevel": 0,
   "explorer.confirmDragAndDrop": false,
