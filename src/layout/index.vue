@@ -4,7 +4,6 @@ const routerList = ['/my/index', '/my/about', '/my/center']
 
 <template>
   <router-view />
-  <h3>layout</h3>
   <footer class="flex flex-row justify-between fixed bottom-0 w-96">
     <router-link
       v-for="(item, index) in routerList"

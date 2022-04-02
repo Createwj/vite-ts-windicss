@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import legacy from '@vitejs/plugin-legacy'
-
 import WindiCSS from 'vite-plugin-windicss'
+import AutoImport from 'unplugin-auto-import/vite'
 
 import { resolve } from 'path'
 const pathResolve = (dir: string): any => {
@@ -16,7 +16,6 @@ const alias: Record<string, string> = {
   style: pathResolve('src/style')
 }
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
@@ -24,6 +23,15 @@ export default defineConfig({
     legacy({
       targets: ['defaults', 'not IE 11'],
       polyfills: true
+    }),
+    AutoImport({
+      include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/],
+      imports: ['vue', 'vue-router'],
+      eslintrc: {
+        enabled: true,
+        filepath: './.eslintrc-auto-import.json',
+        globalsPropValue: 'readonly'
+      }
     })
   ],
   server: {
@@ -35,7 +43,6 @@ export default defineConfig({
     cors: true
   },
   resolve: {
-    // ***** 路径配置新增
-    alias // ***** 路径配置新增
+    alias
   }
 })

@@ -1,9 +1,13 @@
+// const { globals } = require('./.eslintrc-auto-import.json')
 module.exports = {
   root: true,
   env: {
     browser: true,
     node: true,
     'vue/setup-compiler-macros': true
+  },
+  globals: {
+    dataLayer: 'readonly'
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -16,7 +20,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     '@vue/eslint-config-typescript/recommended',
-    '@vue/eslint-config-prettier'
+    '@vue/eslint-config-prettier',
+    './.eslintrc-auto-import.json'
   ],
   plugins: ['vue', 'prettier', '@typescript-eslint'],
   rules: {
