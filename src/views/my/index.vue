@@ -6,7 +6,9 @@
     <p class="font-bold">12</p>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+console.log(123)
+</script>
 <style>
 .inner-box {
   border: 1px solid blue;
