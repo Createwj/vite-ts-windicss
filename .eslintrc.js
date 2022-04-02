@@ -49,9 +49,9 @@ module.exports = {
     'prettier',
     'plugin:prettier/recommended'
   ],
-  plugins: ['vue', 'prettier'],
+  plugins: ['vue', 'prettier', '@typescript-eslint'],
   rules: {
-    'prettier/prettier': ['error'],
+    'prettier/prettier': ['off'],
     'vue/multi-word-component-names': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 1 : 0,
     'no-debugger': process.env.NODE_ENV === 'production' ? 1 : 0,
@@ -74,42 +74,7 @@ module.exports = {
     'no-irregular-whitespace': 1, // 禁止在字符串和注释之外不规则的空白
     'prefer-const': 0, // 要求使用 const 声明那些声明后不再被修改的变量.如果一个变量从不重新分配，使用const声明更好。const 声明告诉读者，“这个变量永远不会被重新分配，”减少认知负荷并提高可维护性。
     'no-use-before-define': 1, // 禁止在变量定义之前使用它们
-    'vue/attributes-order': 2, // vue api使用顺序
-    'vue/order-in-components': [
-      2,
-      {
-        order: [
-          'el',
-          'name',
-          'key',
-          'parent',
-          'functional',
-          ['delimiters', 'comments'],
-          ['components', 'directives', 'filters'],
-          'extends',
-          'mixins',
-          ['provide', 'inject'],
-          'validate',
-          'scrollToTop',
-          'transition',
-          'loading',
-          'inheritAttrs',
-          'model',
-          ['props', 'propsData'],
-          'emits',
-          'setup',
-          'asyncData',
-          'data',
-          'computed',
-          'watch',
-          'created',
-          'mounted',
-          'methods',
-          ['template', 'render'],
-          'renderError'
-        ]
-      }
-    ],
+
     'vue/no-multiple-template-root': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/no-var-requires': 0,
@@ -117,13 +82,5 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-empty-function': 0
-  },
-  overrides: [
-    {
-      files: ['**/__tests__/*.{j,t}s?(x)'],
-      env: {
-        mocha: true
-      }
-    }
-  ]
+  }
 }
