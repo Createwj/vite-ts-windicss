@@ -34,10 +34,6 @@
     "source.fixAll.eslint": true
   },
 
-  "prettier.eslintIntegration": true,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "vetur.format.defaultFormatter.js": "vscode-typescript",
   "vetur.format.defaultFormatterOptions": {
