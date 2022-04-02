@@ -16,7 +16,7 @@
  * "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
  */
 
- module.exports = {
+module.exports = {
   root: true,
   env: {
     browser: true,
@@ -47,11 +47,11 @@
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
-    'plugin:prettier/recommended',
-    'plugin:jest/recommended'
+    'plugin:prettier/recommended'
   ],
   plugins: ['vue'],
   rules: {
+    'vue/multi-word-component-names': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 1 : 0,
     'no-debugger': process.env.NODE_ENV === 'production' ? 1 : 0,
     eqeqeq: 2, // 要求使用 === 和 !==
