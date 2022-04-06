@@ -5,8 +5,6 @@ import { createApp } from 'vue'
 import 'virtual:windi.css'
 import 'virtual:windi-devtools'
 
-window.dataLayer = '全局属性： dataLayer'
-
 async function bootstrap() {
   const app = createApp(App)
   setupRouter(app)
