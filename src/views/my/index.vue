@@ -9,10 +9,12 @@
 
 <script setup lang="ts">
 console.log('123')
-const a = {
+const aIndex = {
   abc: 1,
   b: 3
 }
+console.log(aIndex)
+
 const abc = ref(123213)
 console.log(dataLayer)
 </script>
