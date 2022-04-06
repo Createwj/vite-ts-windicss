@@ -40,13 +40,15 @@ module.exports = {
         usePrettierrc: false
       }
     ],
+    'no-unused-vars': 'off',
+
     'vue/no-multiple-template-root': 0,
     'vue/multi-word-component-names': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 1 : 0,
     'no-debugger': process.env.NODE_ENV === 'production' ? 1 : 0,
 
     '@typescript-eslint/explicit-module-boundary-types': 0,
-    '@typescript-eslint/no-var-requires': 0,
+    '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-unused-vars': 0,
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/no-explicit-any': 0,

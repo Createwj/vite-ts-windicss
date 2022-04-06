@@ -8,7 +8,6 @@
 </template>
 
 <script setup lang="ts">
-console.log('123')
 const aIndex = {
   abc: 1,
   b: 3

@@ -31,7 +31,8 @@ export default defineConfig({
         enabled: true,
         filepath: './.eslintrc-auto-import.json',
         globalsPropValue: true
-      }
+      },
+      dts: './auto-import.d.ts'
     })
   ],
   server: {
