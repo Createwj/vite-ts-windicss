@@ -18,12 +18,3 @@ const routerList = ['/my/index', '/my/about', '/my/center']
     </router-link>
   </footer>
 </template>
-
-<style lang="scss">
-.btn {
-  @apply font-bold py-2 px-4 rounded;
-}
-.btn-blue {
-  @apply bg-blue-500 text-white;
-}
-</style>
