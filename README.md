@@ -15,3 +15,5 @@ husky 不触发 需要变成可执行文件
 chmod 777 .husky/pre-commit
 chmod 777 .husky/commit-msg
 ```
+
+[windicss](https://cn.windicss.org/utilities/general/colors.html)

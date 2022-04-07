@@ -3,8 +3,8 @@
     <button class="w-20 h-10 bg-dark-50 text-cool-gray-50 rounded-5px" @click="--globalState">
       -
     </button>
-    <p class="font-bold mx-10px">{{ globalState }}</p>
-    <button class="w-20 h-10 bg-danger text-cool-gray-50 rounded-5px" @click="++globalState">
+    <p class="font-bold mx-10px text-base-26px decoration-green-500">{{ globalState }}</p>
+    <button class="w-20 h-10 text-cool-gray-50 rounded-5px bg-danger" @click="++globalState">
       +
     </button>
   </div>
