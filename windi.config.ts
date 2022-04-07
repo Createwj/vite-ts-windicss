@@ -3,6 +3,7 @@ import theme from './theme'
 export default defineConfig({
   plugins: [],
   theme,
+  attributify: true,
   extract: {
     include: ['**/*.{vue,js,css,scss,sass,json}'],
     exclude: ['node_modules', '.git']
