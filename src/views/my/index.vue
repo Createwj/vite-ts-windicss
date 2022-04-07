@@ -1,9 +1,12 @@
 <template>
-  <div class="flex m-5">
-    <button class="w-20 h-10 bg-dark-50 text-cool-gray-50" @click="--globalState">-</button>
-    <p class="font-bold">{{ globalState }}</p>
-    <button class="w-20 h-10 bg-dark-50 text-cool-gray-50" @click="++globalState">+</button>
-    <div class="fixed w-100vw left-0 bottom-50px text-center bg-dark-100 text-cyan-100">btn</div>
+  <div class="flex m-5 items-center justify-center">
+    <button class="w-20 h-10 bg-dark-50 text-cool-gray-50 rounded-5px" @click="--globalState">
+      -
+    </button>
+    <p class="font-bold mx-10px">{{ globalState }}</p>
+    <button class="w-20 h-10 bg-danger text-cool-gray-50 rounded-5px" @click="++globalState">
+      +
+    </button>
   </div>
 </template>
 
