@@ -7,6 +7,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "fix": "eslint --fix --ext .js,.ts,.vue,.html src",
+    "prepare": "husky install",
     "lint": "eslint --ext .js,.ts,.vue,.html src"
   },
   "dependencies": {

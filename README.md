@@ -10,8 +10,13 @@ This template should help get you started developing with Vue 3 in Vite. The tem
   [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
 husky 不触发 需要变成可执行文件
+pkg增加命令`prepare`
 
-```
+"prepare": "husky install",
+
+或者执行
+
+``` 
 chmod 777 .husky/pre-commit
 chmod 777 .husky/commit-msg
 ```
