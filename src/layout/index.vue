@@ -1,19 +1,27 @@
 <script setup lang="ts">
-const routerList = ['/my/index', '/my/about', '/my/center']
+const routerList = [
+  { name: 'index', val: '/my/index' },
+  { name: 'vue-use', val: '/my/use' },
+  { name: 'about', val: '/my/about' }
+]
 </script>
 
 <template>
-  <router-view />
-  <footer class="flex flex-row justify-between fixed bottom-0 w-96 divide-x border-top">
+  <div class="w-full h-screen overflow-y-scroll overflow-x-hidden pb-40px">
+    <router-view />
+  </div>
+  <footer
+    class="w-full flex flex-row justify-between fixed bottom-0 divide-x border-top z-10 bg-light-50"
+  >
     <router-link
       v-for="(item, index) in routerList"
       :key="index"
-      v-slot="{ route, isActive }"
-      :to="item"
+      v-slot="{ isActive }"
+      :to="item.val"
       class="w-1/3 text-center"
     >
       <div class="btn flex justify-center items-center p-10px" :class="isActive && 'btn-blue'">
-        {{ route.fullPath }}
+        {{ item.name }}
       </div>
     </router-link>
   </footer>

@@ -13,8 +13,14 @@ const index: RouteRecordRaw[] = [
         component: () => import('@/views/my/about.vue')
       },
       {
-        path: 'center',
-        component: () => import('@/views/my/center.vue')
+        path: 'use',
+        component: () => import('@/views/my/use.vue'),
+        children: [
+          {
+            path: 'index/:id',
+            component: () => import('@/views/components/vueUse/index.vue')
+          }
+        ]
       }
     ]
   }

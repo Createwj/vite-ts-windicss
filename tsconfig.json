@@ -13,9 +13,9 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "jsx": "preserve"
   },
-  "jsx": "preserve",
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "./auto-import.d.ts"],
   "exclude": ["node_modules", "dist", "**/SwiperScroll.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -6,7 +6,9 @@ module.exports = {
     'vue/setup-compiler-macros': true
   },
   globals: {
-    dataLayer: true
+    defineProps: true,
+    defineEmits: true,
+    withDefault: true
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',

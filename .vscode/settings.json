@@ -21,5 +21,6 @@
 
   "explorer.confirmDragAndDrop": false,
   "editor.renderControlCharacters": true,
-  "editor.renderWhitespace": "all"
+  "editor.renderWhitespace": "all",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
