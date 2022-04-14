@@ -37,3 +37,7 @@ chmod 777 .husky/commit-msg
 ```
 
 [windicss](https://cn.windicss.org/utilities/general/colors.html)
+
+## 依赖检测
+
+`npx taze -r`
