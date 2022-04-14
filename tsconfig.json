@@ -15,6 +15,7 @@
     },
     "types": ["vite/client"]
   },
+  "jsx": "preserve",
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "./auto-import.d.ts"],
   "exclude": ["node_modules", "dist", "**/SwiperScroll.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
