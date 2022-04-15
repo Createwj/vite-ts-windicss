@@ -9,10 +9,6 @@ const index: RouteRecordRaw[] = [
         component: () => import('@/views/my/index.vue')
       },
       {
-        path: 'about',
-        component: () => import('@/views/my/about.vue')
-      },
-      {
         path: 'use',
         component: () => import('@/views/my/use.vue'),
         children: [

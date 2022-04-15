@@ -1,8 +1,7 @@
 <script setup lang="ts">
 const routerList = [
   { name: 'index', val: '/my/index' },
-  { name: 'vue-use', val: '/my/use' },
-  { name: 'about', val: '/my/about' }
+  { name: 'vue-use', val: '/my/use' }
 ]
 </script>
 
@@ -10,7 +9,7 @@ const routerList = [
   <div class="w-full h-screen overflow-y-scroll overflow-x-hidden pb-40px">
     <router-view />
   </div>
-  <footer
+  <!-- <footer
     class="w-full flex flex-row justify-between fixed bottom-0 divide-x border-top z-10 bg-light-50"
   >
     <router-link
@@ -24,5 +23,5 @@ const routerList = [
         {{ item.name }}
       </div>
     </router-link>
-  </footer>
+  </footer> -->
 </template>

@@ -5,7 +5,6 @@ export default {
 </script>
 <script setup lang="ts">
 import { mdiArrowRight } from '@quasar/extras/mdi-v6'
-const useRoute = useRouter()
 
 interface useApiType {
   name: string
