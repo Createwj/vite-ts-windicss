@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import { useVModels } from '@vueuse/core'
 
-const count = ref(0)
-
 const props = defineProps<{
   dec: number
 }>()
@@ -10,20 +8,8 @@ const props = defineProps<{
 const emit = defineEmits(['update:dec'])
 
 const { dec } = useVModels(props, emit)
-
-// const props = defineProps<{
-//   modelValue: string
-// }>()
-// const emit = defineEmits(['update:modelValue'])
-
-// const data = useVModel(props, 'modelValue', emit)
 </script>
 <template>
-  <p>
-    {{ count }}
-  </p>
-  <button class="btn-green mt-3" @click="count++">{{ props.dec }}-children</button>
-  <br />
   <button class="btn-green mt-3" @click="emit('update:dec', 2)">
     children-count(no-useVModal)
   </button>

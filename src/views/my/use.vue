@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Menu from '@/components/menu.vue'
+import { useGet, usePost } from '@/utils/require'
 const isLoading = ref(false)
 const vueUseApi = [
   {
@@ -49,6 +50,13 @@ const vueUseApi = [
     ]
   }
 ]
+
+onMounted(() => {
+  usePost('/api/vueUse', {
+    isLoading: false,
+    vueUseApi: 234
+  })
+})
 
 const getPromiseComponents = (name: string) => {
   isLoading.value = true
