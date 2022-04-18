@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useVModel } from '@vueuse/core'
+import { useVModels } from '@vueuse/core'
 
 const count = ref(0)
 
@@ -9,7 +9,7 @@ const props = defineProps<{
 
 const emit = defineEmits(['update:dec'])
 
-const data = useVModel(props, 'dec', emit)
+const { dec } = useVModels(props, emit)
 
 // const props = defineProps<{
 //   modelValue: string
@@ -29,6 +29,6 @@ const data = useVModel(props, 'dec', emit)
   </button>
 
   <hr />
-  <p>{{ data }}</p>
-  <button class="btn-green m-3" @click="++data">data++</button>
+  <p>{{ dec }}</p>
+  <button class="btn-green m-3" @click="++dec">data++</button>
 </template>
