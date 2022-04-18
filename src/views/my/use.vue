@@ -21,7 +21,10 @@ const vueUseApi = [
   },
   {
     name: 'Animation',
-    children: [{ name: 'onClickOutside', components: 'Animation/onClickOutside' }]
+    children: [
+      { name: 'useInterval', components: 'Animation/useInterval' },
+      { name: 'useIntervalFn', components: 'Animation/useIntervalFn' }
+    ]
   }
 ]
 
