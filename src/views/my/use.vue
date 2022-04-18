@@ -25,6 +25,28 @@ const vueUseApi = [
       { name: 'useInterval', components: 'Animation/useInterval' },
       { name: 'useIntervalFn', components: 'Animation/useIntervalFn' }
     ]
+  },
+  {
+    name: 'Elements',
+    children: [
+      {
+        name: 'useActiveElement',
+        components: 'Elements/useActiveElement'
+      }
+    ]
+  },
+  {
+    name: 'Components',
+    children: [
+      {
+        name: 'useVirtualList',
+        components: 'Components/useVirtualList'
+      },
+      {
+        name: 'useVModel',
+        components: 'components/useVModel'
+      }
+    ]
   }
 ]
 
